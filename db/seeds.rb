@@ -10,7 +10,7 @@ end
 puts "Cities created"
 
 10.times do
-	User.create(last_name:Faker::Name.last_name, first_name:Faker::Name.first_name, email: Faker::Internet.email, age:rand(12..100), description:Faker::Lorem.paragraph, city_id:City.all.sample.id)
+	User.create(last_name:Faker::Name.last_name, first_name:Faker::Name.first_name, email: Faker::Internet.email, age:rand(12..100), description:Faker::Lorem.paragraph, city_id:City.all.sample.id, password: "motdepasse")
 end
 puts "Users created"
 
